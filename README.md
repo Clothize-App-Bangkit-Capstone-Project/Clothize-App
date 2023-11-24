@@ -15,8 +15,8 @@ Local tailoring and automatic clothes size measuring platform
 
 ## Repository
 
-| Path | URL Repo's                                           |
-| ---- | ---------------------------------------------------- |
-| ML   | https://github.com/zachisoni/clothize-model          |
-| CC   | https://github.com/zaribae/clothize-api/             |
-| MD   | https://github.com/FaresAriandha/ClothizeForMDCohort |
+| Path | URL Repo's                                                           |
+| ---- | -------------------------------------------------------------------- |
+| ML   | https://github.com/zachisoni/clothize-model                          |
+| CC   | https://github.com/zaribae/clothize-api/                             |
+| MD   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-MD |
