@@ -13,10 +13,18 @@ Local tailoring and automatic clothes size measuring platform
 -    The application can only perform detection for apparel tops such as sweatshirts, shirts, and more.
 -    Customers can order apparel tops from a selected tailor, and the size is taken from the size information stored in their account.
 
+## Features
+
+-    Login Feature
+-    Register Feature
+-    Body Measurement Feature
+-    Order Feature
+-    Profile Feature
+
 ## Repository
 
 | Path | URL Repo's                                                           |
 | ---- | -------------------------------------------------------------------- |
-| ML   | https://github.com/zachisoni/clothize-model                          |
-| CC   | https://github.com/zaribae/clothize-api/                             |
+| ML   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-CC |
+| CC   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-CC |
 | MD   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-MD |
