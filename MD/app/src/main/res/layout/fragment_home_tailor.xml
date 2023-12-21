@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:padding="16dp"
+    tools:context=".client.ui.client.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/tv_titleHome"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Welcome, Store Name"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="@id/edt_search_order"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_subtitleHome"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="How are your orders today?"
+            android:textColor="@color/brown_gold"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="@id/tv_titleHome"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titleHome" />
+
+
+        <EditText
+            android:id="@+id/edt_search_order"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/border_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_find"
+            app:layout_constraintBottom_toBottomOf="@id/btn_find"
+            android:hint="Search order .."
+            android:textSize="16sp"
+            android:textColorHint="@color/brown_gold"
+            app:layout_constraintTop_toTopOf="@+id/btn_find"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_button_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/search_find"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitleHome" />
+
+        <TextView
+            android:id="@+id/total_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Orders : 0"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_brown"
+            app:layout_constraintStart_toStartOf="@id/edt_search_order"
+            app:layout_constraintEnd_toEndOf="@id/btn_find"
+            app:layout_constraintTop_toBottomOf="@id/edt_search_order"
+            android:layout_marginTop="24dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_orders"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_order_tailor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

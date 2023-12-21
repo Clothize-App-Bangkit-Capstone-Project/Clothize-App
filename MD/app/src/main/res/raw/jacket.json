@@ -1,0 +1,93 @@
+{
+  "type": "jackets",
+  "maleSize": [
+    {
+      "id": 1,
+      "size": "S",
+      "chestGirth": 96,
+      "shoulderWidth": 42,
+      "bodyLength": 61,
+      "bodyGirth": 88
+    },{
+      "id": 2,
+      "size": "M",
+      "chestGirth": 97,
+      "shoulderWidth": 43,
+      "bodyLength": 62,
+      "bodyGirth": 89
+    },{
+      "id": 3,
+      "size": "L",
+      "chestGirth": 98,
+      "shoulderWidth": 44,
+      "bodyLength": 63,
+      "bodyGirth": 90
+    },{
+      "id": 4,
+      "size": "XL",
+      "chestGirth": 99,
+      "shoulderWidth": 45,
+      "bodyLength": 64,
+      "bodyGirth": 91
+    },{
+      "id": 5,
+      "size": "X2L",
+      "chestGirth": 100,
+      "shoulderWidth": 46,
+      "bodyLength": 65,
+      "bodyGirth": 92
+    },{
+      "id": 6,
+      "size": "X3L",
+      "chestGirth": 101,
+      "shoulderWidth": 47,
+      "bodyLength": 66,
+      "bodyGirth": 93
+    }
+  ],
+  "femaleSize": [
+    {
+      "id": 1,
+      "size": "S",
+      "chestGirth": 98,
+      "shoulderWidth": 37,
+      "bodyLength": 59,
+      "bodyGirth": 81
+    },{
+      "id": 2,
+      "size": "M",
+      "chestGirth": 99,
+      "shoulderWidth": 38,
+      "bodyLength": 60,
+      "bodyGirth": 82
+    },{
+      "id": 3,
+      "size": "L",
+      "chestGirth": 100,
+      "shoulderWidth": 39,
+      "bodyLength": 61,
+      "bodyGirth": 83
+    },{
+      "id": 4,
+      "size": "XL",
+      "chestGirth": 101,
+      "shoulderWidth": 40,
+      "bodyLength": 62,
+      "bodyGirth": 84
+    },{
+      "id": 5,
+      "size": "X2L",
+      "chestGirth": 102,
+      "shoulderWidth": 41,
+      "bodyLength": 63,
+      "bodyGirth": 85
+    },{
+      "id": 6,
+      "size": "X3L",
+      "chestGirth": 103,
+      "shoulderWidth": 42,
+      "bodyLength": 64,
+      "bodyGirth": 86
+    }
+  ]
+}

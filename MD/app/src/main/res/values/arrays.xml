@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>Clothing type</item>
+        <item>T-shirts</item>
+        <item>Shirts</item>
+        <item>Hoodie</item>
+        <item>Jacket</item>
+    </string-array>
+
+    <string-array name="service">
+        <item>Service</item>
+        <item>T-shirts (Short)</item>
+        <item>T-shirts (Long)</item>
+        <item>Shirts (Short)</item>
+        <item>Shirts (Long)</item>
+        <item>Hoodie (Short)</item>
+        <item>Hoodie (Long)</item>
+        <item>Jacket</item>
+    </string-array>
+
+    <string-array name="size">
+        <item>Size</item>
+        <item>S</item>
+        <item>M</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>XXXL</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>Color</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>White</item>
+        <item>Navy</item>
+        <item>Black</item>
+    </string-array>
+</resources>

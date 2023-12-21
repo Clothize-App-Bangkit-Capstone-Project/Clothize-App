@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    android:padding="16dp"
+    android:scrollbars="none"
+    tools:context=".client.ui.register.RegisterActivity">
+    
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_regisBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@null"
+            app:elevation="30dp"
+            android:alpha="0"
+            tools:alpha="100"
+            android:backgroundTint="@color/brown_gold"
+            android:layout_gravity="top|start"
+            android:contentDescription="@string/btn_register" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/img_logo"
+                android:layout_width="265dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="30dp"
+                android:alpha="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="register.json"
+                app:lottie_loop="true"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tv_regisUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tv_regisUsername"
+                android:textColor="@color/brown_gold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_logo"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/brown_gold"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_regisUser"
+                android:alpha="0"
+                tools:alpha="100">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_regisEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tv_regisEmail"
+                android:textColor="@color/brown_gold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/brown_gold"
+                android:textColorHint="@color/brown_gold"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/baseline_email_24"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_regisEmail"
+                android:alpha="0"
+                tools:alpha="100">
+
+                <com.capstoneproject.clothizeapp.client.ui.custom_view.CustomEmailEditText
+                    android:id="@+id/emailRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_regisPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tv_pass"
+                android:textColor="@color/brown_gold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/brown_gold"
+                app:passwordToggleDrawable="@drawable/password_toggle"
+                app:endIconDrawable="@drawable/password_toggle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/baseline_password_24"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_regisPass"
+                android:alpha="0"
+                tools:alpha="100">
+
+                <com.capstoneproject.clothizeapp.client.ui.custom_view.CustomPasswordEditText
+                    android:id="@+id/passwordRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_regisConPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/tv_conPass"
+                android:textColor="@color/brown_gold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordConfirmEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/brown_gold"
+                app:passwordToggleDrawable="@drawable/password_toggle"
+                app:endIconDrawable="@drawable/password_toggle"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/baseline_password_24"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_regisConPass"
+                android:alpha="0"
+                tools:alpha="100">
+
+                <com.capstoneproject.clothizeapp.client.ui.custom_view.CustomPasswordEditText
+                    android:id="@+id/passwordRegisConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingHorizontal="16dp"
+                android:text="@string/tv_regisNote"
+                android:textColor="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@id/passwordConfirmEditTextLayout"
+                app:layout_constraintStart_toStartOf="@id/passwordConfirmEditTextLayout"
+                app:layout_constraintEnd_toEndOf="@id/passwordConfirmEditTextLayout"
+                android:alpha="0"
+                tools:alpha="100"
+                />
+
+            <Button
+                android:id="@+id/btn_regis"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/register"
+                app:layout_constraintTop_toBottomOf="@+id/note"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_regisGmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btnngmail"
+                android:fontFamily="@font/poppins_medium"
+                android:shadowColor="@color/black"
+                android:text="Sign up With Gmail"
+                android:textColor="@color/brown_gold"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_google"
+                app:iconTintMode="multiply"
+                app:iconGravity="textEnd"
+                android:alpha="0"
+                app:layout_constraintTop_toBottomOf="@+id/btn_regis" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</ScrollView>

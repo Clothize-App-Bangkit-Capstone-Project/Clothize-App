@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu_tailor"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.capstoneproject.clothizeapp.tailor.ui.home.HomeTailorFragment"
+        android:label="HomeTailorFragment"
+        tools:layout="@layout/fragment_home_tailor"/>
+
+    <fragment
+        android:id="@+id/menu_order"
+        android:name="com.capstoneproject.clothizeapp.tailor.ui.order.OrderTailorFragment"
+        android:label="OrderFragment"
+        tools:layout="@layout/fragment_order_tailor"/>
+
+    <fragment
+        android:id="@+id/menu_store"
+        android:name="com.capstoneproject.clothizeapp.tailor.ui.StoreFragment"
+        android:label="StoreFragment"
+        tools:layout="@layout/fragment_store"/>
+
+    <fragment
+        android:id="@+id/menu_profile"
+        android:name="com.capstoneproject.clothizeapp.tailor.ui.profile.ProfileTailorFragment"
+        android:label="ProfileTailorFragment"
+        tools:layout="@layout/fragment_profile_tailor"/>
+
+</navigation>

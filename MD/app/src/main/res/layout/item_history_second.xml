@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItemHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:strokeWidth="5dp"
+    app:strokeColor="@color/brown_gold"
+    android:layout_marginBottom="24dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:paddingHorizontal="16dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_type_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="History 1 (Female)"
+            android:textColor="@color/brown_gold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_size_body_circum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="L. Badan : 100 cm"
+            android:textColor="@color/brown_gold"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_type_clothes"
+            app:layout_constraintTop_toBottomOf="@id/tv_type_clothes" />
+
+        <TextView
+            android:id="@+id/tv_size_body_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="P. Badan : 100 cm"
+            android:textColor="@color/brown_gold"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_size_body_circum"
+            app:layout_constraintBottom_toBottomOf="@id/tv_size_body_circum"
+            app:layout_constraintTop_toTopOf="@id/tv_size_body_circum"/>
+
+        <TextView
+            android:id="@+id/tv_size_chest_circum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="L. Dada : 100 cm"
+            android:textColor="@color/brown_gold"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_type_clothes"
+            app:layout_constraintTop_toBottomOf="@id/tv_size_body_circum" />
+
+        <TextView
+            android:id="@+id/tv_size_shoulder_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="L. Bahu : 100 cm"
+            android:textColor="@color/brown_gold"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_size_chest_circum"
+            app:layout_constraintBottom_toBottomOf="@id/tv_size_chest_circum"
+            app:layout_constraintTop_toTopOf="@id/tv_size_chest_circum"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12, Nov 2023, 18:30"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_size_chest_circum"
+            android:layout_marginTop="10dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

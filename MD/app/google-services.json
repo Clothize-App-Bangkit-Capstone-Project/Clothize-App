@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610688315264",
+    "project_id": "clothize-app-6879d",
+    "storage_bucket": "clothize-app-6879d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610688315264:android:626af063553245a358db65",
+        "android_client_info": {
+          "package_name": "com.capstoneproject.clothizeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPb7d1Ve6CIxeud5PCNo711cLLy0HTb8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".client.ui.client.measurements.MeasurementActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:id="@+id/title_measurement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Feature Instructions"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:textColor="@color/brown_gold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rules"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:textColor="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@id/title_measurement"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Spinner
+                android:id="@+id/sp_type"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:paddingStart="10dp"
+                android:entries="@array/type"
+                android:backgroundTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@id/rules"
+                app:layout_constraintStart_toStartOf="@id/rules"
+                app:layout_constraintEnd_toEndOf="@id/rules"
+                android:background="@drawable/bg_edittext"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/title_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/gender"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp"
+                android:textColor="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@id/sp_type"
+                app:layout_constraintStart_toStartOf="@id/rules" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@id/title_gender"
+                app:layout_constraintTop_toBottomOf="@id/title_gender">
+                <RadioButton
+                    android:id="@+id/rd_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/male"
+                    android:buttonTint="@color/brown_gold"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/brown_gold"
+                    android:theme="@style/MyCheckBox"
+                    app:layout_constraintStart_toStartOf="@id/rules"
+                    app:layout_constraintTop_toBottomOf="@id/title_gender" />
+
+                <RadioButton
+                    android:id="@+id/rd_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/female"
+                    android:checked="false"
+                    android:buttonTint="@color/brown_gold"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/brown_gold"
+                    app:layout_constraintStart_toEndOf="@id/rd_male"
+                    app:layout_constraintTop_toTopOf="@id/rd_male"
+                    app:layout_constraintBottom_toBottomOf="@id/rd_male" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Age"
+                android:textColor="@color/brown_gold"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/ageTIL"
+                app:layout_constraintTop_toTopOf="@id/title_gender"
+                app:layout_constraintBottom_toBottomOf="@id/title_gender"
+                android:visibility="gone"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ageTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/brown_gold"
+                android:layout_marginEnd="16dp"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_age"
+                app:layout_constraintBottom_toBottomOf="@id/rg_gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/weightTIL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ageEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/height"
+                android:textColor="@color/brown_gold"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/title_gender"
+                app:layout_constraintTop_toBottomOf="@+id/rg_gender"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/heightTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/brown_gold"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/title_gender"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_height"
+                app:layout_constraintEnd_toStartOf="@id/weightTIL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/heightEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/weight"
+                android:textColor="@color/brown_gold"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/weightTIL"
+                app:layout_constraintTop_toTopOf="@id/tv_height"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weightTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/brown_gold"
+                android:layout_marginEnd="16dp"
+                app:startIconTint="@color/brown_gold"
+                app:layout_constraintTop_toTopOf="@+id/heightTIL"
+                app:layout_constraintBottom_toBottomOf="@id/heightTIL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/heightTIL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weightEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:textColor="@color/brown_gold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/brown_gold"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/border_edit_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_image"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp"
+                android:textColor="@color/brown_gold"
+                app:layout_constraintTop_toBottomOf="@id/heightTIL"
+                app:layout_constraintStart_toStartOf="@id/rules"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/rules"
+                app:layout_constraintEnd_toEndOf="@id/rules"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toBottomOf="@id/title_img">
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    tools:src="@tools:sample/avatars"
+                    android:contentDescription="@string/user_photo" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_open_camera"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/btn_open_camera"
+                android:textColor="@color/brown_gold"
+                android:background="@drawable/bg_button_secondary"
+                app:layout_constraintEnd_toEndOf="@id/cardView"
+                app:layout_constraintStart_toEndOf="@id/btn_gallery"
+                app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_gallery"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/open_gallery"
+                android:textColor="@color/brown_gold"
+                android:background="@drawable/bg_button_secondary"
+                app:layout_constraintStart_toStartOf="@id/cardView"
+                app:layout_constraintEnd_toStartOf="@id/btn_open_camera"
+                app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_calculate"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/btn_calculate"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_primary"
+                app:layout_constraintTop_toBottomOf="@id/btn_open_camera" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/btn_back_measurement"
+                android:textColor="@color/brown_gold"
+                android:background="@drawable/bg_button_secondary"
+                app:layout_constraintTop_toBottomOf="@id/btn_calculate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

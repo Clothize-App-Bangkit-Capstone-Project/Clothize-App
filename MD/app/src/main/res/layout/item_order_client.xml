@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItemHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:strokeWidth="5dp"
+    android:backgroundTint="@color/white"
+    app:strokeColor="@color/brown_gold"
+    android:layout_marginBottom="24dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:paddingHorizontal="16dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_tailor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tampan Tailor's"
+            android:textColor="@color/dark_brown"
+            android:textSize="18sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_type"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="T-shirt (Short) - Male"
+            android:textColor="@color/brown_gold"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="@+id/tv_tailor"
+            app:layout_constraintTop_toBottomOf="@id/tv_tailor" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pending"
+            android:background="@drawable/bg_gray_pending"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_estimation"
+            app:layout_constraintTop_toTopOf="@id/tv_tailor"/>
+
+
+        <TextView
+            android:id="@+id/tv_estimation"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Estimate: 3 days"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="@id/tv_order_type"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_type"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

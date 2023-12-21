@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    tools:context=".client.ui.client.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_titleHome"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Welcome, Username"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="@id/edt_search_tailor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_subtitleHome"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Let's create a custom outfit for you!"
+            android:textColor="@color/brown_gold"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="@id/tv_titleHome"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titleHome" />
+
+
+        <EditText
+            android:id="@+id/edt_search_tailor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/border_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_find"
+            app:layout_constraintBottom_toBottomOf="@id/btn_find"
+            android:hint="Search tailor .."
+            android:textSize="16sp"
+            android:textColorHint="@color/brown_gold"
+            app:layout_constraintTop_toTopOf="@+id/btn_find"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_button_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/search_find"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitleHome" />
+
+        <TextView
+            android:id="@+id/title_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tailor data not found!"
+            android:textColor="@color/red_rejected"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/edt_search_tailor"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tailor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="20dp"
+            android:overScrollMode="never"
+            android:paddingBottom="100dp"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_search_tailor"
+            tools:listitem="@layout/item_tailor" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

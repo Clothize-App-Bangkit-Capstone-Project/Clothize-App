@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    tools:context=".client.ui.login.LoginActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/img_logo"
+            android:layout_width="265dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="80dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="login.json"
+            app:lottie_loop="true"
+            tools:alpha="100" />
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/tv_Username"
+            android:textColor="@color/brown_gold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo"
+            android:alpha="0"
+            tools:alpha="100"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailUsernameTIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/brown_gold"
+            android:textColorHint="@color/brown_gold"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/baseline_person_24"
+            app:startIconTint="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            android:alpha="0"
+            tools:alpha="100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailUsernameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:textColor="@color/brown_gold"
+                android:maxLines="1"
+                android:fontFamily="sans-serif"
+                android:textColorHint="@color/brown_gold"
+                android:inputType="text"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/border_edit_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/tv_pass"
+            android:textColor="@color/brown_gold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailUsernameTIL"
+            android:alpha="0"
+            tools:alpha="100"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passTIL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/brown_gold"
+            app:passwordToggleDrawable="@drawable/password_toggle"
+            app:endIconDrawable="@drawable/password_toggle"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/baseline_password_24"
+            app:startIconTint="@color/brown_gold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pass"
+            android:alpha="0"
+            tools:alpha="100">
+
+            <com.capstoneproject.clothizeapp.client.ui.custom_view.CustomPasswordEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:textColor="@color/brown_gold"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColorHint="@color/brown_gold"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/border_edit_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_login"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
+            app:cornerRadius="30dp"
+            android:backgroundTint="@color/brown_gold"
+            app:layout_constraintTop_toBottomOf="@+id/passTIL"
+            android:alpha="0"
+            tools:alpha="100"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btnngmail"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sign_in_with_gmail"
+            android:textColor="@color/brown_gold"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_google"
+            app:iconTintMode="multiply"
+            app:iconGravity="textEnd"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <LinearLayout
+            android:id="@+id/box_to_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/btn_gmail"
+            android:alpha="0"
+            tools:alpha="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/tv_account"
+                android:textColor="@color/brown_gold" />
+
+            <TextView
+                android:id="@+id/tv_intentRegis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/tv_regis"
+                android:textColor="@color/brown_gold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tailor.ui.MainTailorActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/style_bottom_bar"
+        android:backgroundTint="@color/brown_gold"
+        app:itemIconTint="@color/items_menu_client_colors"
+        app:itemTextColor="@color/items_menu_client_colors"
+        app:menu="@menu/tailor_menu"
+        app:labelVisibilityMode="labeled"
+        />
+
+    <fragment
+        android:id="@+id/nav_host_fragment_tailor"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_menu_tailor"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

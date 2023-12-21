@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown_gold">#956F00</color>
+    <color name="brown_gold_A50">#80956F00</color>
+    <color name="secondary_color">#EDE1CF</color>
+    <color name="yellow_on_progress">#FFF845</color>
+    <color name="green_finish">#54FF45</color>
+    <color name="gray_pending">#B5B5B5</color>
+    <color name="red_rejected">#FF7373</color>
+    <color name="dark_brown">#664A17</color>
+</resources>

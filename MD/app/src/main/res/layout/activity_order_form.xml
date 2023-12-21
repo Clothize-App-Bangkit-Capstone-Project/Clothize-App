@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".client.ui.client.home.OrderFormActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/form_titleOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Order Form"
+            android:textColor="@color/brown_gold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_orderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Client Name"
+            android:textSize="16sp"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/form_titleOrder" />
+
+        <TextView
+            android:id="@+id/order_orderName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Ujang Garut"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="@id/tv_orderName"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderName" />
+
+        <TextView
+            android:id="@+id/tv_orderGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toEndOf="@+id/tv_orderName"
+            app:layout_constraintTop_toTopOf="@+id/tv_orderName" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/tv_orderGender"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderGender">
+
+            <RadioButton
+                android:id="@+id/rd_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/brown_gold"
+                android:checked="false"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Male"
+                android:textColor="@color/brown_gold"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/MyCheckBox" />
+
+            <RadioButton
+                android:id="@+id/rd_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/brown_gold"
+                android:checked="false"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Female"
+                android:textColor="@color/brown_gold"
+                android:textSize="16sp"
+                android:theme="@style/MyCheckBox" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_orderPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Client Phone"
+            android:textSize="16sp"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_orderName" />
+
+        <TextView
+            android:id="@+id/order_orderPhone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="6221721928916"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderPhone" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/order_imgModel"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_img_form"
+            android:backgroundTint="#F5F5F5"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_orderPhone">
+
+            <ImageView
+                android:id="@+id/img_model"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_placeholder_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Insert Your Model"
+                android:textColor="@color/brown_gold"
+                android:textSize="24dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/order_btnImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button_secondary"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Insert"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/order_imgModel" />
+
+        <TextView
+            android:id="@+id/tv_orderService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Service"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_btnImage" />
+
+        <Spinner
+            android:id="@+id/order_orderService"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:paddingStart="8dp"
+            android:entries="@array/service"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_orderService" />
+
+        <TextView
+            android:id="@+id/tv_orderSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Clothing Size"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_orderService" />
+
+        <Spinner
+            android:id="@+id/order_orderSize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:paddingStart="8dp"
+            android:entries="@array/size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_orderSize" />
+
+        <TextView
+            android:id="@+id/tv_orderColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Clothing Color"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_orderSize" />
+
+        <Spinner
+            android:id="@+id/order_orderColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:paddingStart="8dp"
+            android:entries="@array/color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_orderColor" />
+
+        <TextView
+            android:id="@+id/tv_orderQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Quantity"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_orderColor" />
+
+        <EditText
+            android:id="@+id/orderQuantity"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/border_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderQuantity"
+            android:hint="Qty"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:textColorHint="@color/brown_gold" />
+
+
+
+        <TextView
+            android:id="@+id/tv_orderEstimated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Estimated Ordering"
+            android:textColor="@color/brown_gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderQuantity" />
+
+        <EditText
+            android:id="@+id/orderEstimated"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/border_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_orderEstimated"
+            android:hint="Number of days"
+            android:textSize="16sp"
+            android:textColor="@color/brown_gold"
+            android:inputType="number"
+            android:textColorHint="@color/brown_gold" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/order_btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Cancel"
+            android:background="@drawable/bg_button_secondary"
+            android:textColor="@color/brown_gold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/order_btnOrder"
+            app:layout_constraintTop_toBottomOf="@id/orderEstimated" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/order_btnOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Order"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/order_btnCancel"
+            app:layout_constraintTop_toTopOf="@id/order_btnCancel"
+            app:layout_constraintBottom_toBottomOf="@id/order_btnCancel"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

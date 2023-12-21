@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_gold"
+    tools:context=".client.ui.splash.SplashActivity">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/box"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:background="@drawable/bg_button_primary"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:alpha="0"-->
+<!--        android:backgroundTint="@color/dark_brown"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/cloth"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cloth"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:textSize="30sp"-->
+<!--        android:layout_marginEnd="45dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="@font/poppins_medium"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ing"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ing"-->
+<!--        app:layout_constraintStart_toEndOf="@id/cloth"-->
+<!--        app:layout_constraintTop_toTopOf="@id/cloth"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/cloth"-->
+<!--        android:textSize="30sp"-->
+<!--        android:visibility="visible"-->
+<!--        android:alpha="0"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="@font/poppins_medium"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ize"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ize"-->
+<!--        app:layout_constraintStart_toEndOf="@id/cloth"-->
+<!--        app:layout_constraintTop_toTopOf="@id/s"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/s"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:alpha="1"-->
+<!--        android:fontFamily="@font/poppins_medium" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/s"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Size"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@id/cloth"-->
+<!--        android:textSize="30sp"-->
+<!--        android:visibility="visible"-->
+<!--        android:alpha="0"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="@font/poppins_medium" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="App"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/s"-->
+<!--        app:layout_constraintTop_toTopOf="@id/s"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/ing"-->
+<!--        android:textSize="30sp"-->
+<!--        android:visibility="visible"-->
+<!--        android:alpha="0"-->
+<!--        android:layout_marginStart="60dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:fontFamily="@font/poppins_medium" />-->
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0"
+        tools:alpha="100"
+        android:layout_marginStart="8dp"
+        android:clipToOutline="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/white" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
