@@ -123,8 +123,9 @@ Local tailoring and automatic clothes size measuring platform
       <td align="center">Rejected Form</td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_home.jpg"  alt="1" width = 240px  ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_profile.png" alt="2" width = 240px></td>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_detail_order.png"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_approve_form.jpg" alt="2" width = 240px></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_rejected_form.jpg" alt="2" width = 240px></td>
    </tr> 
 </table>
 <!-- 1. Login (For Client and Tailor)
