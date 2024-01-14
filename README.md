@@ -39,8 +39,8 @@ Local tailoring and automatic clothes size measuring platform
       <td align="center">Register</td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px height = 480px ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 480px></td>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px ></td>
    </tr> 
 </table>
 
@@ -54,16 +54,16 @@ Local tailoring and automatic clothes size measuring platform
       <td align="center">Order</td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_home.jpg"  alt="1" width = 240px height = 480px ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_order.jpg" alt="2" width = 240px height = 480px></td>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_home.jpg"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_order.jpg" alt="2" width = 240px ></td>
    </tr> 
    <tr>
       <td align="center">History</td>
       <td align="center">Profile</td>
   </tr>
     <tr>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_history.jpg" alt="2" width = 240px height = 480px></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_profile.jpg" alt="2" width = 240px height = 480px></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_history.jpg" alt="2" width = 240px ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_profile.jpg" alt="2" width = 240px ></td>
    </tr> 
 </table>
 
@@ -89,9 +89,9 @@ Local tailoring and automatic clothes size measuring platform
       <td align="center">Detail Order</td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_detail_tailor.png"  alt="1" width = 240px height = 480px ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_order.png" alt="2" width = 240px height = 480px></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_detail_order.png" alt="2" width = 240px height = 480px></td>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_detail_tailor.png"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_order.png" alt="2" width = 240px ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_detail_order.png" alt="2" width = 240px ></td>
    </tr> 
 </table>
 
