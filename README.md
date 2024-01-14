@@ -35,8 +35,8 @@ Local tailoring and automatic clothes size measuring platform
 
 <table>
   <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px height = 640px ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 640px></td>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px height = 480px ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 480px></td>
    </tr> 
    <tr>
       <td>Login</td>
