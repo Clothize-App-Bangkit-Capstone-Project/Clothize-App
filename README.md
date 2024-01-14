@@ -28,3 +28,27 @@ Local tailoring and automatic clothes size measuring platform
 | ML   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-CC |
 | CC   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-CC |
 | MD   | https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-MD |
+
+## Documentation
+
+### Login and Register
+
+<table>
+  <tr>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 360px height = 640px ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 360px height = 640px></td>
+   </tr> 
+   <tr>
+      <td>Login</td>
+      <td>Register</td>
+  </tr>
+</table>
+<!-- 1. Login (For Client and Tailor)
+2. Register (Only Client)
+### Client
+1. Home
+2. Order
+3. History
+4. Profile
+5. Automation Body Measurement
+### Tailor -->
