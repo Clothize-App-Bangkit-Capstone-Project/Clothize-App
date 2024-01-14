@@ -39,8 +39,8 @@ Local tailoring and automatic clothes size measuring platform
     <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 480px></td>
    </tr> 
    <tr>
-      <td>Login</td>
-      <td>Register</td>
+      <td align="center">Login</td>
+      <td align="center">Register</td>
   </tr>
 </table>
 <!-- 1. Login (For Client and Tailor)
