@@ -99,6 +99,34 @@ Local tailoring and automatic clothes size measuring platform
    </tr> 
 </table>
 
+### Tailor
+
+#### Navigation
+
+<table>
+   <tr>
+      <td align="center">Home</td>
+      <td align="center">Profile</td>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_home.jpg"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_profile.png" alt="2" width = 240px></td>
+   </tr> 
+</table>
+
+#### Order System
+
+<table>
+   <tr>
+      <td align="center">Detail Order</td>
+      <td align="center">Approve Form</td>
+      <td align="center">Rejected Form</td>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_home.jpg"  alt="1" width = 240px  ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/tailor/tailor_profile.png" alt="2" width = 240px></td>
+   </tr> 
+</table>
 <!-- 1. Login (For Client and Tailor)
 2. Register (Only Client)
 ### Client
