@@ -34,35 +34,35 @@ Local tailoring and automatic clothes size measuring platform
 ### Login and Register
 
 <table>
-  <tr>
-    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px height = 480px ></td>
-    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 480px></td>
-   </tr> 
    <tr>
       <td align="center">Login</td>
       <td align="center">Register</td>
   </tr>
+  <tr>
+    <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/login.jpg"  alt="1" width = 240px height = 480px ></td>
+    <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/login_register/register.jpg" alt="2" width = 240px height = 480px></td>
+   </tr> 
 </table>
 
 ### Client
 
 <table>
+   <tr>
+      <td align="center">Home</td>
+      <td align="center">Order</td>
+  </tr>
   <tr>
     <td> <img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_home.jpg"  alt="1" width = 240px height = 480px ></td>
     <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_order.jpg" alt="2" width = 240px height = 480px></td>
    </tr> 
    <tr>
-      <td align="center">Home</td>
-      <td align="center">Order</td>
+      <td align="center">History</td>
+      <td align="center">Profile</td>
   </tr>
     <tr>
     <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_history.jpg" alt="2" width = 240px height = 480px></td>
     <td><img src="https://github.com/Clothize-App-Bangkit-Capstone-Project/Clothize-App/blob/main/src/client/client_profile.jpg" alt="2" width = 240px height = 480px></td>
    </tr> 
-   <tr>
-      <td align="center">History</td>
-      <td align="center">Profile</td>
-  </tr>
 </table>
 <!-- 1. Login (For Client and Tailor)
 2. Register (Only Client)
